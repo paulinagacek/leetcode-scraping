@@ -1,0 +1,2431 @@
+title,prompt
+Median of Two Sorted Arrays,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given two sorted arrays 
+nums1
+ and 
+nums2
+ of size 
+m
+ and 
+n
+ respectively, return 
+the median
+ of the two sorted arrays.
+
+
+The overall run time complexity should be 
+O(log (m+n))
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ nums1 = [1,3], nums2 = [2]
+
+Output:
+ 2.00000
+
+Explanation:
+ merged array = [1,2,3] and median is 2.
+
+
+
+Example 2:
+
+
+
+
+Input:
+ nums1 = [1,2], nums2 = [3,4]
+
+Output:
+ 2.50000
+
+Explanation:
+ merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+nums1.length == m
+
+
+nums2.length == n
+
+
+0 <= m <= 1000
+
+
+0 <= n <= 1000
+
+
+1 <= m + n <= 2000
+
+
+-10
+6
+ <= nums1[i], nums2[i] <= 10
+6
+
+Code template:
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], 
+nums2: List[int]) -> float:
+
+"
+Longest Palindromic Substring,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given a string 
+s
+, return 
+the longest
+ 
+palindromic
+ 
+substring
+ in 
+s
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ s = ""babad""
+
+Output:
+ ""bab""
+
+Explanation:
+ ""aba"" is also a valid answer.
+
+
+
+Example 2:
+
+
+
+
+Input:
+ s = ""cbbd""
+
+Output:
+ ""bb""
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= s.length <= 1000
+
+
+s
+ consist of only digits and English letters.
+
+Code template:
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+
+"
+Reverse Integer,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given a signed 32-bit integer 
+x
+, return 
+x
+ with its digits reversed
+. If reversing 
+x
+ causes the value to go outside the signed 32-bit integer range 
+[-2
+31
+, 2
+31
+ - 1]
+, then return 
+0
+.
+
+
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ x = 123
+
+Output:
+ 321
+
+
+
+Example 2:
+
+
+
+
+Input:
+ x = -123
+
+Output:
+ -321
+
+
+
+Example 3:
+
+
+
+
+Input:
+ x = 120
+
+Output:
+ 21
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+-2
+31
+ <= x <= 2
+31
+ - 1
+
+Code template:
+class Solution:
+    def reverse(self, x: int) -> int:
+
+"
+Regular Expression Matching,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given an input string 
+s
+ and a pattern 
+p
+, implement regular expression matching with support for 
+'.'
+ and 
+'*'
+ where:
+
+
+
+
+'.'
+ Matches any single character.​​​​
+
+
+'*'
+ Matches zero or more of the preceding element.
+
+
+
+
+The matching should cover the 
+entire
+ input string (not partial).
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ s = ""aa"", p = ""a""
+
+Output:
+ false
+
+Explanation:
+ ""a"" does not match the entire string ""aa"".
+
+
+
+Example 2:
+
+
+
+
+Input:
+ s = ""aa"", p = ""a*""
+
+Output:
+ true
+
+Explanation:
+ '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes ""aa"".
+
+
+
+Example 3:
+
+
+
+
+Input:
+ s = ""ab"", p = "".*""
+
+Output:
+ true
+
+Explanation:
+ "".*"" means ""zero or more (*) of any character (.)"".
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= s.length <= 20
+
+
+1 <= p.length <= 20
+
+
+s
+ contains only lowercase English letters.
+
+
+p
+ contains only lowercase English letters, 
+'.'
+, and 
+'*'
+.
+
+
+It is guaranteed for each appearance of the character 
+'*'
+, there will be a previous valid character to match.
+
+Code template:
+class Solution:
+    def isMatch(self, s: str, p: str) -> bool:
+
+"
+Longest Common Prefix,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Write a function to find the longest common prefix string amongst an array of strings.
+
+
+If there is no common prefix, return an empty string 
+""""
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ strs = [""flower"",""flow"",""flight""]
+
+Output:
+ ""fl""
+
+
+
+Example 2:
+
+
+
+
+Input:
+ strs = [""dog"",""racecar"",""car""]
+
+Output:
+ """"
+
+Explanation:
+ There is no common prefix among the input strings.
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= strs.length <= 200
+
+
+0 <= strs[i].length <= 200
+
+
+strs[i]
+ consists of only lowercase English letters if it is non-empty.
+
+Code template:
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> 
+str:
+
+"
+4Sum,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given an array 
+nums
+ of 
+n
+ integers, return 
+an array of all the 
+unique
+ quadruplets
+ 
+[nums[a], nums[b], nums[c], nums[d]]
+ such that:
+
+
+
+
+0 <= a, b, c, d < n
+
+
+a
+, 
+b
+, 
+c
+, and 
+d
+ are 
+distinct
+.
+
+
+nums[a] + nums[b] + nums[c] + nums[d] == target
+
+
+
+
+You may return the answer in 
+any order
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ nums = [1,0,-1,0,-2,2], target = 0
+
+Output:
+ [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ nums = [2,2,2,2,2], target = 8
+
+Output:
+ [[2,2,2,2]]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= nums.length <= 200
+
+
+-10
+9
+ <= nums[i] <= 10
+9
+
+
+-10
+9
+ <= target <= 10
+9
+
+Code template:
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> 
+List[List[int]]:
+
+"
+Next Permutation,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+A 
+permutation
+ of an array of integers is an arrangement of its members into a sequence or linear order.
+
+
+
+
+For example, for 
+arr = [1,2,3]
+, the following are all the permutations of 
+arr
+: 
+[1,2,3], [1,3,2], [2, 1, 3], [2, 3, 1], [3,1,2], [3,2,1]
+.
+
+
+
+
+The 
+next permutation
+ of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the 
+next permutation
+ of that array is the permutation that follows it in the sorted container. If such arrangement is not possible, the array must be rearranged as the lowest possible order (i.e., sorted in ascending order).
+
+
+
+
+For example, the next permutation of 
+arr = [1,2,3]
+ is 
+[1,3,2]
+.
+
+
+Similarly, the next permutation of 
+arr = [2,3,1]
+ is 
+[3,1,2]
+.
+
+
+While the next permutation of 
+arr = [3,2,1]
+ is 
+[1,2,3]
+ because 
+[3,2,1]
+ does not have a lexicographical larger rearrangement.
+
+
+
+
+Given an array of integers 
+nums
+, 
+find the next permutation of
+ 
+nums
+.
+
+
+The replacement must be 
+in place
+ and use only constant extra memory.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ nums = [1,2,3]
+
+Output:
+ [1,3,2]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ nums = [3,2,1]
+
+Output:
+ [1,2,3]
+
+
+
+Example 3:
+
+
+
+
+Input:
+ nums = [1,1,5]
+
+Output:
+ [1,5,1]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= nums.length <= 100
+
+
+0 <= nums[i] <= 100
+
+Code template:
+class Solution:
+    def nextPermutation(self, nums: List[int]) -> None:
+        """"""
+        Do not return anything, modify nums in-place 
+instead.
+        """"""
+
+"
+Combination Sum II,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given a collection of candidate numbers (
+candidates
+) and a target number (
+target
+), find all unique combinations in 
+candidates
+ where the candidate numbers sum to 
+target
+.
+
+
+Each number in 
+candidates
+ may only be used 
+once
+ in the combination.
+
+
+Note:
+ The solution set must not contain duplicate combinations.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ candidates = [10,1,2,7,6,1,5], target = 8
+
+Output:
+ 
+[
+[1,1,6],
+[1,2,5],
+[1,7],
+[2,6]
+]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ candidates = [2,5,2,1,2], target = 5
+
+Output:
+ 
+[
+[1,2,2],
+[5]
+]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= candidates.length <= 100
+
+
+1 <= candidates[i] <= 50
+
+
+1 <= target <= 30
+
+Code template:
+class Solution:
+    def combinationSum2(self, candidates: List[int], 
+target: int) -> List[List[int]]:
+
+"
+First Missing Positive,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given an unsorted integer array 
+nums
+. Return the 
+smallest positive integer
+ that is 
+not present
+ in 
+nums
+.
+
+
+You must implement an algorithm that runs in 
+O(n)
+ time and uses 
+O(1)
+ auxiliary space.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ nums = [1,2,0]
+
+Output:
+ 3
+
+Explanation:
+ The numbers in the range [1,2] are all in the array.
+
+
+
+Example 2:
+
+
+
+
+Input:
+ nums = [3,4,-1,1]
+
+Output:
+ 2
+
+Explanation:
+ 1 is in the array but 2 is missing.
+
+
+
+Example 3:
+
+
+
+
+Input:
+ nums = [7,8,9,11,12]
+
+Output:
+ 1
+
+Explanation:
+ The smallest positive integer 1 is missing.
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= nums.length <= 10
+5
+
+
+-2
+31
+ <= nums[i] <= 2
+31
+ - 1
+
+Code template:
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> 
+int:
+
+"
+Multiply Strings,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given two non-negative integers 
+num1
+ and 
+num2
+ represented as strings, return the product of 
+num1
+ and 
+num2
+, also represented as a string.
+
+
+Note:
+ You must not use any built-in BigInteger library or convert the inputs to integer directly.
+
+
+ 
+
+
+Example 1:
+
+
+Input:
+ num1 = ""2"", num2 = ""3""
+
+Output:
+ ""6""
+
+Example 2:
+
+
+Input:
+ num1 = ""123"", num2 = ""456""
+
+Output:
+ ""56088""
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= num1.length, num2.length <= 200
+
+
+num1
+ and 
+num2
+ consist of digits only.
+
+
+Both 
+num1
+ and 
+num2
+ do not contain any leading zero, except the number 
+0
+ itself.
+
+Code template:
+class Solution:
+    def multiply(self, num1: str, num2: str) -> str:
+
+"
+Permutations II,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given a collection of numbers, 
+nums
+, that might contain duplicates, return 
+all possible unique permutations 
+in any order
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ nums = [1,1,2]
+
+Output:
+
+[[1,1,2],
+ [1,2,1],
+ [2,1,1]]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ nums = [1,2,3]
+
+Output:
+ [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= nums.length <= 8
+
+
+-10 <= nums[i] <= 10
+
+Code template:
+class Solution:
+    def permuteUnique(self, nums: List[int]) -> List
+[List[int]]:
+
+"
+Merge Intervals,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given an array of 
+intervals
+ where 
+intervals[i] = [start
+i
+, end
+i
+]
+, merge all overlapping intervals, and return 
+an array of the non-overlapping intervals that cover all the intervals in the input
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ intervals = [[1,3],[2,6],[8,10],[15,18]]
+
+Output:
+ [[1,6],[8,10],[15,18]]
+
+Explanation:
+ Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+
+
+
+Example 2:
+
+
+
+
+Input:
+ intervals = [[1,4],[4,5]]
+
+Output:
+ [[1,5]]
+
+Explanation:
+ Intervals [1,4] and [4,5] are considered overlapping.
+
+
+
+Example 3:
+
+
+
+
+Input:
+ intervals = [[4,7],[1,4]]
+
+Output:
+ [[1,7]]
+
+Explanation:
+ Intervals [1,4] and [4,7] are considered overlapping.
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= intervals.length <= 10
+4
+
+
+intervals[i].length == 2
+
+
+0 <= start
+i
+ <= end
+i
+ <= 10
+4
+
+Code template:
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List
+[List[int]]:
+
+"
+Insert Interval,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+You are given an array of non-overlapping intervals 
+intervals
+ where 
+intervals[i] = [start
+i
+, end
+i
+]
+ represent the start and the end of the 
+i
+th
+ interval and 
+intervals
+ is sorted in ascending order by 
+start
+i
+. You are also given an interval 
+newInterval = [start, end]
+ that represents the start and end of another interval.
+
+
+Insert 
+newInterval
+ into 
+intervals
+ such that 
+intervals
+ is still sorted in ascending order by 
+start
+i
+ and 
+intervals
+ still does not have any overlapping intervals (merge overlapping intervals if necessary).
+
+
+Return 
+intervals
+ after the insertion
+.
+
+
+Note
+ that you don't need to modify 
+intervals
+ in-place. You can make a new array and return it.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ intervals = [[1,3],[6,9]], newInterval = [2,5]
+
+Output:
+ [[1,5],[6,9]]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+
+Output:
+ [[1,2],[3,10],[12,16]]
+
+Explanation:
+ Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+0 <= intervals.length <= 10
+4
+
+
+intervals[i].length == 2
+
+
+0 <= start
+i
+ <= end
+i
+ <= 10
+5
+
+
+intervals
+ is sorted by 
+start
+i
+ in 
+ascending
+ order.
+
+
+newInterval.length == 2
+
+
+0 <= start <= end <= 10
+5
+
+Code template:
+class Solution:
+    def insert(self, intervals: List[List[int]], 
+newInterval: List[int]) -> List[List[int]]:
+
+"
+Spiral Matrix II,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given a positive integer 
+n
+, generate an 
+n x n
+ 
+matrix
+ filled with elements from 
+1
+ to 
+n
+2
+ in spiral order.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+
+
+Input:
+ n = 3
+
+Output:
+ [[1,2,3],[8,9,4],[7,6,5]]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ n = 1
+
+Output:
+ [[1]]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= n <= 20
+
+Code template:
+class Solution:
+    def generateMatrix(self, n: int) -> List[List[int]]:
+
+"
+Subsets,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given an integer array 
+nums
+ of 
+unique
+ elements, return 
+all possible
+ 
+subsets
+ 
+(the power set)
+.
+
+
+The solution set 
+must not
+ contain duplicate subsets. Return the solution in 
+any order
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ nums = [1,2,3]
+
+Output:
+ [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ nums = [0]
+
+Output:
+ [[],[0]]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= nums.length <= 10
+
+
+-10 <= nums[i] <= 10
+
+
+All the numbers of 
+nums
+ are 
+unique
+.
+
+Code template:
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List
+[int]]:
+
+"
+Scramble String,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+We can scramble a string s to get a string t using the following algorithm:
+
+
+
+
+If the length of the string is 1, stop.
+
+
+If the length of the string is > 1, do the following:
+	
+
+
+Split the string into two non-empty substrings at a random index, i.e., if the string is 
+s
+, divide it to 
+x
+ and 
+y
+ where 
+s = x + y
+.
+
+
+Randomly
+ decide to swap the two substrings or to keep them in the same order. i.e., after this step, 
+s
+ may become 
+s = x + y
+ or 
+s = y + x
+.
+
+
+Apply step 1 recursively on each of the two substrings 
+x
+ and 
+y
+.
+
+
+
+
+
+
+
+
+Given two strings 
+s1
+ and 
+s2
+ of 
+the same length
+, return 
+true
+ if 
+s2
+ is a scrambled string of 
+s1
+, otherwise, return 
+false
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ s1 = ""great"", s2 = ""rgeat""
+
+Output:
+ true
+
+Explanation:
+ One possible scenario applied on s1 is:
+""great"" --> ""gr/eat"" // divide at random index.
+""gr/eat"" --> ""gr/eat"" // random decision is not to swap the two substrings and keep them in order.
+""gr/eat"" --> ""g/r / e/at"" // apply the same algorithm recursively on both substrings. divide at random index each of them.
+""g/r / e/at"" --> ""r/g / e/at"" // random decision was to swap the first substring and to keep the second substring in the same order.
+""r/g / e/at"" --> ""r/g / e/ a/t"" // again apply the algorithm recursively, divide ""at"" to ""a/t"".
+""r/g / e/ a/t"" --> ""r/g / e/ a/t"" // random decision is to keep both substrings in the same order.
+The algorithm stops now, and the result string is ""rgeat"" which is s2.
+As one possible scenario led s1 to be scrambled to s2, we return true.
+
+
+
+Example 2:
+
+
+
+
+Input:
+ s1 = ""abcde"", s2 = ""caebd""
+
+Output:
+ false
+
+
+
+Example 3:
+
+
+
+
+Input:
+ s1 = ""a"", s2 = ""a""
+
+Output:
+ true
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+s1.length == s2.length
+
+
+1 <= s1.length <= 30
+
+
+s1
+ and 
+s2
+ consist of lowercase English letters.
+
+Code template:
+class Solution:
+    def isScramble(self, s1: str, s2: str) -> bool:
+
+"
+Restore IP Addresses,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+A 
+valid IP address
+ consists of exactly four integers separated by single dots. Each integer is between 
+0
+ and 
+255
+ (
+inclusive
+) and cannot have leading zeros.
+
+
+
+
+For example, 
+""0.1.2.201""
+ and 
+""192.168.1.1""
+ are 
+valid
+ IP addresses, but 
+""0.011.255.245""
+, 
+""192.168.1.312""
+ and 
+""192.168@1.1""
+ are 
+invalid
+ IP addresses.
+
+
+
+
+Given a string 
+s
+ containing only digits, return 
+all possible valid IP addresses that can be formed by inserting dots into 
+s
+. You are 
+not
+ allowed to reorder or remove any digits in 
+s
+. You may return the valid IP addresses in 
+any
+ order.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ s = ""25525511135""
+
+Output:
+ [""255.255.11.135"",""255.255.111.35""]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ s = ""0000""
+
+Output:
+ [""0.0.0.0""]
+
+
+
+Example 3:
+
+
+
+
+Input:
+ s = ""101023""
+
+Output:
+ [""1.0.10.23"",""1.0.102.3"",""10.1.0.23"",""10.10.2.3"",""101.0.2.3""]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= s.length <= 20
+
+
+s
+ consists of digits only.
+
+Code template:
+class Solution:
+    def restoreIpAddresses(self, s: str) -> List[str]:
+
+"
+Binary Tree Inorder Traversal,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given the 
+root
+ of a binary tree, return 
+the inorder traversal of its nodes' values
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ 
+root = [1,null,2,3]
+
+
+Output:
+ 
+[1,3,2]
+
+
+Explanation:
+
+
+
+
+
+
+Example 2:
+
+
+
+
+Input:
+ 
+root = [1,2,3,4,5,null,8,null,null,6,7,9]
+
+
+Output:
+ 
+[4,2,6,5,7,1,3,9,8]
+
+
+Explanation:
+
+
+
+
+
+
+Example 3:
+
+
+
+
+Input:
+ 
+root = []
+
+
+Output:
+ 
+[]
+
+
+
+
+Example 4:
+
+
+
+
+Input:
+ 
+root = [1]
+
+
+Output:
+ 
+[1]
+
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+The number of nodes in the tree is in the range 
+[0, 100]
+.
+
+
+-100 <= Node.val <= 100
+
+
+
+
+ 
+
+
+Follow up:
+ Recursive solution is trivial, could you do it iteratively?
+
+Code template:
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def inorderTraversal(self, root: Optional
+[TreeNode]) -> List[int]:
+
+"
+Unique Binary Search Trees II,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given an integer 
+n
+, return 
+all the structurally unique 
+BST'
+s (binary search trees), which has exactly 
+n
+ nodes of unique values from
+ 
+1
+ 
+to
+ 
+n
+. Return the answer in 
+any order
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+
+
+Input:
+ n = 3
+
+Output:
+ [[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ n = 1
+
+Output:
+ [[1]]
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= n <= 8
+
+Code template:
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def generateTrees(self, n: int) -> List[Optional
+[TreeNode]]:
+
+"
+Word Break,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given a string 
+s
+ and a dictionary of strings 
+wordDict
+, return 
+true
+ if 
+s
+ can be segmented into a space-separated sequence of one or more dictionary words.
+
+
+Note
+ that the same word in the dictionary may be reused multiple times in the segmentation.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ s = ""leetcode"", wordDict = [""leet"",""code""]
+
+Output:
+ true
+
+Explanation:
+ Return true because ""leetcode"" can be segmented as ""leet code"".
+
+
+
+Example 2:
+
+
+
+
+Input:
+ s = ""applepenapple"", wordDict = [""apple"",""pen""]
+
+Output:
+ true
+
+Explanation:
+ Return true because ""applepenapple"" can be segmented as ""apple pen apple"".
+Note that you are allowed to reuse a dictionary word.
+
+
+
+Example 3:
+
+
+
+
+Input:
+ s = ""catsandog"", wordDict = [""cats"",""dog"",""sand"",""and"",""cat""]
+
+Output:
+ false
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= s.length <= 300
+
+
+1 <= wordDict.length <= 1000
+
+
+1 <= wordDict[i].length <= 20
+
+
+s
+ and 
+wordDict[i]
+ consist of only lowercase English letters.
+
+
+All the strings of 
+wordDict
+ are 
+unique
+.
+
+Code template:
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> 
+bool:
+
+"
+Word Break II,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given a string 
+s
+ and a dictionary of strings 
+wordDict
+, add spaces in 
+s
+ to construct a sentence where each word is a valid dictionary word. Return all such possible sentences in 
+any order
+.
+
+
+Note
+ that the same word in the dictionary may be reused multiple times in the segmentation.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ s = ""catsanddog"", wordDict = [""cat"",""cats"",""and"",""sand"",""dog""]
+
+Output:
+ [""cats and dog"",""cat sand dog""]
+
+
+
+Example 2:
+
+
+
+
+Input:
+ s = ""pineapplepenapple"", wordDict = [""apple"",""pen"",""applepen"",""pine"",""pineapple""]
+
+Output:
+ [""pine apple pen apple"",""pineapple pen apple"",""pine applepen apple""]
+
+Explanation:
+ Note that you are allowed to reuse a dictionary word.
+
+
+
+Example 3:
+
+
+
+
+Input:
+ s = ""catsandog"", wordDict = [""cats"",""dog"",""sand"",""and"",""cat""]
+
+Output:
+ []
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+1 <= s.length <= 20
+
+
+1 <= wordDict.length <= 1000
+
+
+1 <= wordDict[i].length <= 10
+
+
+s
+ and 
+wordDict[i]
+ consist of only lowercase English letters.
+
+
+All the strings of 
+wordDict
+ are 
+unique
+.
+
+
+Input is generated in a way that the length of the answer doesn't exceed 10
+5
+.
+
+Code template:
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> 
+List[str]:
+
+"
+Binary Tree Postorder Traversal,"
+You are a highly skilled Python programmer. 
+Your task is to generate **only Python code**, strictly following the given instructions. 
+Do not write explanations, comments, or any text outside the code.
+
+You will be given:
+
+1. A **task description** detailing what the function should do, with examples, constraints, and sometimes preferred time complexity.
+2. A **code template** showing the exact class/function structure the solution should use.
+
+Your generated solution must:
+- Follow the code template exactly (do not modify class/function names or signatures).  
+- Respect all constraints and any specified time or space complexity requirements.  
+- Work correctly for all inputs given in the examples and any other valid input within constraints.  
+- Include no extra text or output.
+
+Task description:
+Given the 
+root
+ of a binary tree, return 
+the postorder traversal of its nodes' values
+.
+
+
+ 
+
+
+Example 1:
+
+
+
+
+Input:
+ 
+root = [1,null,2,3]
+
+
+Output:
+ 
+[3,2,1]
+
+
+Explanation:
+
+
+
+
+
+
+Example 2:
+
+
+
+
+Input:
+ 
+root = [1,2,3,4,5,null,8,null,null,6,7,9]
+
+
+Output:
+ 
+[4,6,7,5,2,9,8,3,1]
+
+
+Explanation:
+
+
+
+
+
+
+Example 3:
+
+
+
+
+Input:
+ 
+root = []
+
+
+Output:
+ 
+[]
+
+
+
+
+Example 4:
+
+
+
+
+Input:
+ 
+root = [1]
+
+
+Output:
+ 
+[1]
+
+
+
+
+ 
+
+
+Constraints:
+
+
+
+
+The number of the nodes in the tree is in the range 
+[0, 100]
+.
+
+
+-100 <= Node.val <= 100
+
+
+
+
+ 
+
+
+Follow up:
+ Recursive solution is trivial, could you do it iteratively?
+
+Code template:
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def postorderTraversal(self, root: Optional
+[TreeNode]) -> List[int]:
+
+"
