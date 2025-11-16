@@ -10,7 +10,7 @@
     },
     {
         "title": "Longest Palindromic Substring",
-        "titleSlug": "ongest-palindromic-substringl",
+        "titleSlug": "longest-palindromic-substring",
         "difficulty": "Medium",
         "acRate": 36.74335740930436,
         "hasSolution": true,
@@ -468,15 +468,6 @@
         "hasSolution": true,
         "description": "<p>Given a string <code>s</code> which consists of lowercase or uppercase letters, return the length of the <strong>longest <span data-keyword=\"palindrome-string\">palindrome</span></strong>&nbsp;that can be built with those letters.</p>\n\n<p>Letters are <strong>case sensitive</strong>, for example, <code>&quot;Aa&quot;</code> is not considered a palindrome.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;abccccdd&quot;\n<strong>Output:</strong> 7\n<strong>Explanation:</strong> One longest palindrome that can be built is &quot;dccaccd&quot;, whose length is 7.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;a&quot;\n<strong>Output:</strong> 1\n<strong>Explanation:</strong> The longest palindrome that can be built is &quot;a&quot;, whose length is 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length &lt;= 2000</code></li>\n\t<li><code>s</code> consists of lowercase <strong>and/or</strong> uppercase English&nbsp;letters only.</li>\n</ul>\n",
         "code_template": "class Solution:\n    def longestPalindrome(self, s: str) -> int:"
-    },
-    {
-        "title": "Third Maximum Number",
-        "titleSlug": "third-maximum-number",
-        "difficulty": "Easy",
-        "acRate": 38.17820560821131,
-        "hasSolution": true,
-        "description": "<p>Given an integer array <code>nums</code>, return <em>the <strong>third distinct maximum</strong> number in this array. If the third maximum does not exist, return the <strong>maximum</strong> number</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [3,2,1]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong>\nThe first distinct maximum is 3.\nThe second distinct maximum is 2.\nThe third distinct maximum is 1.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2]\n<strong>Output:</strong> 2\n<strong>Explanation:</strong>\nThe first distinct maximum is 2.\nThe second distinct maximum is 1.\nThe third distinct maximum does not exist, so the maximum (2) is returned instead.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [2,2,3,1]\n<strong>Output:</strong> 1\n<strong>Explanation:</strong>\nThe first distinct maximum is 3.\nThe second distinct maximum is 2 (both 2&#39;s are counted together since they have the same value).\nThe third distinct maximum is 1.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> Can you find an <code>O(n)</code> solution?",
-        "code_template": "class Solution:\n    def thirdMax(self, nums: List[int]) -> int:"
     },
     {
         "title": "All O`one Data Structure",

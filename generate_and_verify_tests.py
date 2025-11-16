@@ -58,21 +58,18 @@ def extract_failing_tests(pytest_output: str) -> List[str]:
 # ------------------------------------------------------
 # Ask Gemini to generate full tests from scratch
 # ------------------------------------------------------
-def generate_tests_from_solution(canonical_code: str, title_slug: str) -> str:
-    prompt = f"""
-You are given Leetcode canonical solution to a problem.
-
-Create a **python file** with pytest **unit tests** that can test this canonical solution.
-The tests must:
-- Import the solution from solutions/{title_slug}.py
-- Cover edge cases and large inputs.
-- Do NOT modify or re-implement the canonical solution.
+def generate_tests_from_solution(canonical_code: str) -> str:
+    prompt = f"""You are given a canonical solution to a Leetcode problem.
+Create a python file with unit tests which could be run on this solution to test it. 
+They should cover large input and edge cases. Don't modify the canonical solution
 
 Canonical solution:
 {canonical_code}
+
+Output only the content of generated test file, without any comments or explanations.
 """
     response = client.models.generate_content(model=MODEL, contents=prompt) # type: ignore
-    return response.text
+    return response.text.replace("```python", "").replace("```", "")
 
 
 # ------------------------------------------------------
@@ -105,7 +102,7 @@ Please output ONLY the corrected updated test file. Do not remove passing tests.
 # ------------------------------------------------------
 def main(json_path: str):
     problems = json.loads(Path(json_path).read_text())
-    tests_dir = Path("tests")
+    tests_dir = Path("tests2")
     solutions_dir = Path("sol")
 
     tests_dir.mkdir(exist_ok=True)
@@ -129,14 +126,12 @@ def main(json_path: str):
             print(f"😃 Test file already exists! {test_file}")
             continue
 
-        # canonical_code = solution_file.read_text()
+        canonical_code = solution_file.read_text()
 
-        # # 1. Generate tests
-        # test_text = generate_tests_from_solution(canonical_code, slug)
-
-        # test_file.write_text(test_text)
+        # 1. Generate tests
+        test_text = generate_tests_from_solution(canonical_code)
+        test_file.write_text(test_text)
         
-
         # # 2. Run pytest
         # for correction_round in range(3):
         #     code, out = run_pytest(test_file)
